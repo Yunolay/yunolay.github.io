@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yunolay's Certificate of Completion</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Prism JS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+  <!-- Prism CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <h1>Certificate of Completion</h1>
+  </header>
+
+  <main>
+    
+    <p> > <a href="./index.html">Home</a> > <a href="./certification.html">Certification</a> > <a href="./certificate_of_completion.html">Certificate of Completion</a>.</p>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <button class="hamburger-menu" style="position: absolute; top: 10px; right: 10px;" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <a id="backLink" href="index.html" style="display: none;">Return main page</a>
+    </button>
+
+    <ul>
+      <li>
+        <h2>TryHackMe</h2>
+        <ul>
+          <li>
+            <h3>TryHackMe Advent of Cyber 2023</h3>
+            <p>Certified December 27, 2023</p>
+            <img src="cert/certificate_of_completion/THM-3VPERXGPDI.png" alt="tryhackme" style="max-width: 20%; height: auto;">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2>Pentesterlab</h2>
+        <ul>
+          <li>
+            <h3>Introduction Badge</h3>
+            <p>Certified December 21, 2023</p>
+            <img src="cert/certificate_of_completion/PTLN23773.jpg" alt="pentesterlab_introduction" style="max-width: 20%; height: auto;">
+          </li>
+          <li>
+            <h3>HTTP Badge</h3>
+            <p>Certified January 8, 2024</p>
+            <img src="cert/certificate_of_completion/PTLH1577.jpg" alt="pentesterlab_http" style="max-width: 20%; height: auto;">
+          </li>
+          <li>
+            <h3>Unix Badge</h3>
+            <p>Certified January 10, 2024</p>
+            <img src="cert/certificate_of_completion/PTLU12080.jpg" alt="pentesterlab_unix" style="max-width: 20%; height: auto;">
+          </li>
+        </ul>
+      </li>
+    </ul>
+  
+  </main>
+
+  <footer>
+    <p> > <a href="./index.html">Home</a> > <a href="./certification.html">Certification</a> > <a href="./certificate_of_completion.html">Certificate of Completion</a>.</p>
+  </footer>
+  <!-- Prism JS -->
+  <script src="js/prism.js"></script>
+  <script>
+    function toggleMenu() {
+        var link = document.getElementById("backLink");
+        if (link.style.display === "none") {
+            link.style.display = "block";
+        } else {
+            link.style.display = "none";
+        }
+    }
+    
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+    });
+  </script>
+</body>
+</html>

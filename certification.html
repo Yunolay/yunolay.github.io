@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yunolay's Certifications</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Prism JS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet" />
+  <!-- Prism CSS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Certifications</h1>
+  </header>
+
+  <main>
+    
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <button class="hamburger-menu" style="position: absolute; top: 10px; right: 10px;" onclick="toggleMenu()">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+        <a id="backLink" href="index.html" style="display: none;">Return main page</a>
+    </button>
+
+    <p> > <a href="./index.html">Home</a> > <a href="./certification.html">Certification.</a></p>
+
+    <ul>
+      <li>
+        <h2>OffSec</h2>
+        <ul>
+          <li>
+            <h3>OffSec Certified Professional (OSCP)</h3>
+            <p>Certified December 9, 2020</p>
+            <img src="cert/oscp.jpg" alt="OSCP" style="max-width: 20%; height: auto;">
+          </li>
+          <li>
+            <h3>OffSec Web Expert (OSWE)</h3>
+            <p>Certified July 2, 2022</p>
+            <img src="cert/oswe.jpg" alt="OSWE" style="max-width: 20%; height: auto;">
+          </li>
+          <li>
+            <h3>OffSec Experienced Penetration Tester (OSEP)</h3>
+            <p>Certified August 13, 2023</p>
+            <img src="cert/osep.jpg" alt="OSEP" style="max-width: 20%; height: auto;">
+          </li>
+          <li>
+            <h3>OffSec Exploit Developer (OSED)</h3>
+            <p>Certified November 26, 2023</p>
+            <img src="cert/osed.jpg" alt="OSED" style="max-width: 20%; height: auto;">
+          </li>
+          <li>
+            <h3>OffSec Certified Expert 3 (OSCE3)</h3>
+            <p>Certified November 29, 2023</p>
+            <img src="cert/osce3.jpg" alt="OSCE3" style="max-width: 20%; height: auto;">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2>HackTheBox</h2>
+        <ul>
+          <li>
+            <h3>HTB Certified Bug Bounty Hunter (HTB CBBH)</h3>
+            <p>Certified December 15, 2023</p>
+            <img src="cert/CBBH.jpg" alt="HTB CBBH" style="max-width: 20%; height: auto;">
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2>INE Security</h2>
+        <ul>
+          <li>
+            <h3>eLearnSecurity Certified Professional Penetration Tester (eCPPTv2)</h3>
+            <p>Certified January 29, 2021</p>
+            <img src="cert/eCPPTv2.jpg" alt="eCPPTv2" style="max-width: 20%; height: auto;">
+          </li>
+          <li>
+            <h3>eLearnSecurity Web application Penetration Tester eXtreme (eWPTXv2)</h3>
+            <p>Certified February 3, 2021</p>
+            <img src="cert/eWPTXv2.jpg" alt="eWPTXv2" style="max-width: 20%; height: auto;">
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <p>Here is the Certificate of Completion: <a href="certificate_of_completion.html">Certificate of Completion</a></p>
+
+  </main>
+  <footer>
+    <p> > <a href="./index.html">Home</a> > <a href="./certification.html">Certification</a>.</p>
+  </footer>
+  <!-- Prism JS -->
+  <script src="js/prism.js"></script>
+  <script>
+    function toggleMenu() {
+        var link = document.getElementById("backLink");
+        if (link.style.display === "none") {
+            link.style.display = "block";
+        } else {
+            link.style.display = "none";
+        }
+    }
+    
+    $(document).ready(function(){
+      $('[data-toggle="popover"]').popover();   
+    });
+  </script>
+</body>
+</html>
